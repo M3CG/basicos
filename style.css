@@ -1,0 +1,16 @@
+body{
+    background-color: #98C1D9;
+    color: #2D2A32;
+}
+
+li{
+    background-color: #F0F3BD;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+footer{
+    display: flex;
+    justify-content: end;
+}
