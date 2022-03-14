@@ -2,101 +2,250 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Tus ejercicios</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Tus ejercicios</title>
 </head>
 
 <body>
-    <header>
-        <h1>Exitos Cñorita!</h1>
-        <div class="links">
-            <a class="link" href="https://quickref.me/python" target="_blank"><img
-                    src="//external-content.duckduckgo.com/ip3/quickref.me.ico" alt="QuickRef.me" /></a>
-            <a class="link" href="https://www.programiz.com/python-programming/online-compiler/" target="_blank"><img
-                    src="//cdn.programiz.com/sites/tutorial2program/files/sp_logo.svg" alt="Programiz.com" /></a>
-        </div>
-    </header>
+  <nav id="navbar">
+    <header>Exitos Cñorita!
+</header>
+    <ul>
+      <li><a class="nav-link" href="#Paginas">Paginas</a></li>
+      <li><a class="nav-link" href="#Introduction">Hola Elnestito!</a></li>
+      <li>
+        <a class="nav-link" href="#What_you_should_already_know">Suma de 3 numeros</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#JavaScript_and_Java">Saber el mayor</a>
+      </li>
+      <li><a class="nav-link" href="#Hello_world">Cuestion de precios</a></li>
+      <li><a class="nav-link" href="#Variables">Mayor de 3</a></li>
+      <li>
+        <a class="nav-link" href="#Declaring_variables">Crema cookie</a>
+      </li>
+      <li><a class="nav-link" href="#Variable_scope">Son iguales?</a></li>
+      <li>
+        <a class="nav-link" href="#Global_variables">Promedio</a>
+      </li>
+      <li><a class="nav-link" href="#Constants">Paridad</a></li>
+      <li><a class="nav-link" href="#Data_types">Temperatura</a></li>
+      <li>
+        <a class="nav-link" href="#if...else_statement">Puedo volaaar!!!</a>
+      </li>
+      <li><a class="nav-link" href="#while_statement">Indice de masa corporal</a></li>
+      <li>
+        <a class="nav-link" href="#Function_declarations">Dificil sin energia</a>
+      </li>
+      <li><a class="nav-link" href="#Reference">Aclaraciones</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Paginas">
+      <header>Paginas</header>
+      <article>
+        <p>Nosotros usamos las paginas:
+        <a class="link" href="https://quickref.me/python" target="_blank"><img
+          src="//external-content.duckduckgo.com/ip3/quickref.me.ico" alt="QuickRef.me" /> QuickRef</a> y
+          <a class="link" href="https://www.onlinegdb.com/online_python_interpreter" target="_blank"><img
+            src="//external-content.duckduckgo.com/ip3/www.onlinegdb.com.ico" alt="onlinegdb.com" /> Onlinegdb</a>
+          </p>
+      </article>
+    </section>
+    <section class="main-section" id="Introduction">
+      <header>Hola Elnestito!</header>
+      <article>
+        <p>
+          Hacer un programa que guarde la cadena "Hola Elnestito!" en una variable y luego muestre
+          el contenido de esa variable por pantalla.
+        </p>
 
-    <div class="grid">
-        <div class="col">
-            <p>
-                guarde la cadena "Hola Elnestito!" en una variable y luego muestre el
-                contenido de esa variable por pantalla.
-            </p>
-        </div>
-        <div class="col">
-            <p>
-                tenga 3 variables numericas y muestre en pantalla la suma de ellas.
-            </p>
-        </div>
-        <div class="col">
-            <p>De 2 numeros, saber cual es el mayor.</p>
-        </div>
-        <div class="col">
-            <p>
-                al cargar el precio de un producto, devuelva el precio final del mismo
-                (producto + iva).
-            </p>
-        </div>
-        <div class="col">
-            <p>De 3 numeros, saber cual es el mayor.</p>
-        </div>
-        <div class="col">
-            <p>
-                Se cargué el nombre de un gusto de helado en una variable y muestre
-                por pantalla un mensaje que aclare lo rico que es el helado de ese
-                gusto.
-            </p>
-        </div>
-        <div class="col">
-            <p>Diga si 2 numeros cargados en variables son iguales o diferentes.</p>
-        </div>
-        <div class="col">
-            <p>Muestre el promedio de 3 numeros.</p>
-        </div>
-        <div class="col">
-            <p>Diga si un numero guardado en una variable es par o impar.</p>
-        </div>
-        <div class="col">
-            <p>
-                Tenga en una variable una temperatura en escala Fahrenheit (debe
-                permitir decimales) y le muestre el equivalente en grados Celsius. La
-                fórmula de conversión que se usa para este cálculo es: celsius = (5/9)
-                * (fahrenheit-32)
-            </p>
-        </div>
+        <p>
+          El segundo nivel de este programa esta en crear un programa que salude a quien lo use, para eso primero hay
+          que preguntar por el nombre de quien lo usa. Cuando sabemos quien es, se le envia un mensaje que diga "Muy
+          buen dia *nombre_de_persona!!!", como en el ejemplo:
+        </p>
+        <ul>
+          <li>
+            Escriba su nombre: Nahi
+          </li>
+          <li>
+            Muy buen dia Nahi!!!
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="What_you_should_already_know">
+      <header>Suma de 3 numeros</header>
+      <article>
+        <p>Escribir un programa que tenga 3 variables numericas y muestre en pantalla la suma de ellas. </p>
+        <p> Al saber más, más se puede: Al avanzar en los estudios vas a poder armar un programa que le pida a la
+          persona que ingrese 3 numeros y devuelva el resultado de la suma, y se vea como en el ejemplo:</p>
+        <ul>
+          <li>
+            Programa para sumar 3 numeros
+          </li>
+          <li>Ingrese el primer numero: *lo_ingresa</li>
+          <li>
+            Ingrese el segundo numero: *lo_ingresa
+          </li>
+          <li>Ingrese el tercer numero: *lo_ingresa</li>
+          <li>La suma de esos numeros es: *la_suma</li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="JavaScript_and_Java">
+      <header>Saber el mayor</header>
+      <article>
+        <p>
+          De 2 numeros, saber cual es el mayor.
+        </p>
 
-        <div class="col">
-            <p>
-                Probar el programa: <br />
-                variable = int(input("Ingrese un numero: ")) <br />
-                print("el numero ingresado es: ", variable)
-            </p>
-        </div>
-        <div class="col">
-            <p>
-                Probar usar la funcion input() en un programa que le pida al usuario 2
-                numeros y muestre la suma <br />
-                Lo interezante del programa es que ahora el usuario no tiene porque
-                meterse con el codigo!!
-            </p>
-        </div>
-        <div class="col">
-            <img class="meme" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F00%2Fe6%2F90%2F00e690da9ce8db3e69470623e3f0ab3d.jpg&f=1&nofb=1" alt="foto del ejercicio">
-            <p>Crear un programa capaz de concatenar asi los numeros. <br> Pista: str().</p>
-        </div>
-        <div class="col">
-            <p>Calculo del indice de masa corporal: <br>
-             Crear un programa medico para calcular el IMC de una persona. <br> Como se calcula? se divide el peso(kg) en la altura(m). <br> Cual es el IMC ideal? 18.5 – 24.9</p>
-             <img class="meme"src="fotos/medica.jpg" alt="una perfecta estudiante, aplicada, persistente e inteligente.">
-        </div>
-    </div>
-    <footer>
-        <p>Feliz dia! (hoy tambien, todos los dias Feliz dia!)</p>
-    </footer>
+        <p>
+          La primera vez que escribisté este programa, los numeros empezaban ya guardados en variables. Seria un avance
+          que puedan elegirse esos numeros cada vez que ejecutamos el codigo. <br> Incluso, habria que probar el
+          comparar más de 2
+        </p>
+        <p>Pista para mas comparaciónes: if</p>
+        <p>Pista para superar los niveles anteriores: for/while</p>
+      </article>
+    </section>
+    <section class="main-section" id="Hello_world">
+      <header>Cuestion de precios</header>
+      <article>
+        El ejercicio original dice:
+        <code>al cargar el precio de un producto, devuelva el precio final del mismo (producto + iva).
+          </code>
+        Sin embargo podemos mejorarlo, podemos hacerlo util para vos.
+        Vos tenes un negocio de budines. Los precios de los materiales que usas se actualizan, ademas que podes cambiar
+        cosas, como el azucar impalpable del glaseado.
+        <code>Escribí un programa que pregunte cuanto cuesta hacer algo, que pregunte a cuanto lo vendes y te diga que porcentaje de ganancia le sacas. 
+          </code>
+
+        Esto va a ser util cada vez que cambie cualquier precio y no solo para la venta de budines, sino para todo lo
+        que quieras vender.
+      </article>
+    </section>
+    <section class="main-section" id="Variables">
+      <header>Mayor de 3</header>
+      <p>
+        Muy parecido a "Saber el mayor", si todavia no tenes un programa que compare el mayor de 3 numeros, entonces
+        este es el momento de intentarlo. Al seguir estudiando vas a poder comparar infinitos numeros con la pista del
+        ejercicio referido.
+      </p>
+      <p>El programa original dice:</p>
+      <code>De 3 numeros, saber cual es el mayor.</code>
+    </section>
+    <section class="main-section" id="Declaring_variables">
+      <header>Crema cookie</header>
+      <article>
+        You can declare a variable in three ways:
+        <p>
+          El ejercicio original es:
+        </p>
+        <code>Se cargué el nombre de un gusto de helado en una variable y muestre por pantalla un mensaje que aclare lo rico que es el helado de ese gusto. </code>
+        <p>
+          No lo cambio a este ejercicio, pero acordate, tanto para este como para todos los otros, hay que hacer que
+          quien usa el programa no necesite ver el codigo. Intenta hacer todo asi desde este punto.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Variable_scope">
+      <header>Son iguales?</header>
+      <article>
+        <p>
+          Original:
+        </p>
+        <code>Diga si 2 numeros cargados en variables son iguales o diferentes.</code>
+        <p>Y con mas números? son tooooooodos iguales?</p>
+      </article>
+    </section>
+    <section class="main-section" id="Global_variables">
+      <header>Promedio</header>
+      <article>
+        <p>
+          Original:
+        </p>
+        <code>Muestre el promedio de 3 numeros.</code>
+        <p>Etselente, que util sería para alguien en la secundaria, que ve su libreta y quiere saber su promedio en la
+          materia, ya que son 3 trimestres. <br>
+          Si quiere saber su promedio general como podriamos resolverle la duda? Para eso hay que promediar todas las
+          materias y son mas de 3, ademas, no todos los colegios tienen la misma cantidad de materias, como podemos
+          hacer entonces? Hay que profundizar en la programación para averigüar.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Constants">
+      <header>Paridad</header>
+      <article>
+        <p>
+          Original:
+        </p>
+
+        <code>Diga si un numero guardado en una variable es par o impar.</code>
+        <p>
+          Que mareo este programa, no lo compliquemos mas, podes resolverlo solo con la ayuda de internet?
+        </p>
+
+      </article>
+    </section>
+    <section class="main-section" id="Data_types">
+      <header>Temperatura</header>
+      <article>
+        <p>Original:</p>
+        <code>Tenga en una variable una temperatura en escala Fahrenheit (debe permitir decimales) y le muestre el equivalente en grados Celsius. La fórmula de conversión que se usa para este cálculo es: celsius = (5/9) * (fahrenheit-32)</code>
+        <p>Y este programa? da gusto resolverlo no? Entonces nos quedemos con el original.</p>
+      </article>
+    </section>
+    <section class="main-section" id="if...else_statement">
+      <header>Puedo volaaar!!!</header>
+      <article>
+        <p>Incluso hay que saber equivocarse, sabrias imitar una equivocación?</p>
+        <img class="meme"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F00%2Fe6%2F90%2F00e690da9ce8db3e69470623e3f0ab3d.jpg&amp;f=1&amp;nofb=1"
+          alt="F, no se carga el meme, pero aqui deberia ir">
+        <p>Pista: str(...codigo...codigo...codigo)</p>
+      </article>
+    </section>
+    <section class="main-section" id="while_statement">
+      <header>Indice de masa corporal</header>
+      <article>
+        <p>Tenes muchisima perseverancia, es para admirar.
+          <br> Que genialidad el poder mezclar las cosas que nos gusta hacer, programación y medicina? como????
+        </p>
+        <img class="meme" src="fotos/medica.jpg"
+          alt="Aqui deberia haber foto de una perfecta estudiante, aplicada, persistente e inteligente.">
+        <code>Calculo del indice de masa corporal:
+            Crear un programa medico para calcular el IMC de una persona.
+            Como se calcula? se divide el peso(kg), en la (altura(m) al cuadrado).
+            Cual es el IMC ideal? 18.5 – 24.9</code>
+      </article>
+    </section>
+    <section class="main-section" id="Function_declarations">
+      <header>Dificil sin energia</header>
+      <article>
+        <p>Este ejercicio nos puede dejar trabado si lo vemos cuando ya estamos cansados.
+          <br> Como funcionan las variables booleanas? <br>
+          Imaginemos la bateria de un celular, puede estar completamente cargada, sin embargo, el que no este
+          completamente cargada, no significa que esta descargada, es decir 0%, sino que tiene muchos otros niveles de
+          carga [1%-99%].
+          <code>Quiero un programa al que yo le diga cuanta carga tiene mi bateria y si tiene 100, entonces que responda que la bateria esta completamente cargada.</code>
+        <p>Como resolvimos este ejercicio? usamos una variable que guarda un tipo de dato especial, un tipo de dato
+          booleano, es decir, que solo puede valer "verdadero" o "falso"</p>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Reference">
+      <header>Aclaraciones</header>
+      <article>
+        <p>
+          Feliz dia!!!! No importa que dia sea, quiero que lo podas vivir con alegria y en la suma de eso, seas feliz!
+        </p>
+      </article>
+    </section>
+  </main>
 </body>
 
 </html>
