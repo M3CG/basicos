@@ -59,6 +59,8 @@ body{
   border-radius: 0.5rem;
 }
 
+
+
 .pagina {
     transform: scale(1);
     transition: all .2s ease-in-out;
