@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #24273F;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: hsla(233, 27%, 19%, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+#logo {
+    margin: 0 2rem;
+    color: #D8DBE2;
+
+}
+
+ul {
+    display: flex;
+    background-color: #24273F;
+    padding-right: 1rem;
+}
+
+li {
+    list-style: none;
+    margin: 0 0.5rem;
+}
+
+.nav-link {
+    width: 24px;
+    height: 24px;
+    margin: 0.3rem 0.5rem;
+    padding: 0.3rem;
+    background: rgba(76, 76, 128, 0.25);
+    border-radius: 9px;
+    color: #D8DBE2;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+}
+
+button {
+    background: transparent;
+    border: transparent;
+    margin: 0.3rem 0.5rem;
+    cursor: pointer;
+}
+
+button .nav-link {
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #333378;
+    z-index: 1;
+    min-width: 160px;
+    border-radius: 9px;
+    padding: 0.5rem;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content svg{
+    margin-right: 1rem;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #a9bcd0;
+    border-radius: 9px;
+}
+
+
+
+/* Empieza el main */
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a9bcd0;
+}
+
+/* Footer */
+
+footer{
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    color: rgba(129, 129, 167, 0.25);
+}
