@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -9,9 +10,10 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background: hsla(233, 27%, 19%, 1);
+    background: #24273F;
     position: fixed;
     top: 0;
     left: 0;
@@ -20,9 +22,30 @@ header {
 }
 
 #logo {
-    margin: 0 2rem;
+    margin: 0.5rem 2rem;
     color: #D8DBE2;
+    animation-name: blanco;
+    animation-duration: 0.5s;
+    transition: 0.5s;
+}
 
+@keyframes blanco {
+    100% {color: #D8DBE2;}
+}
+#logo:hover{
+    animation-name: arcoiris;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes arcoiris {
+    0%   {color: #D8DBE2;}
+    40%  {color: #679436;}
+    80%  {color: #2EC4B6;}
+    60%  {color: #E71D36;}
+    20%  {color: #FF9F1C;}
+    100% {color: #D8DBE2;}
 }
 
 ul {
@@ -44,13 +67,18 @@ li {
     background: rgba(76, 76, 128, 0.25);
     border-radius: 9px;
     color: #D8DBE2;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    float: right;
 }
 
 button {
@@ -60,6 +88,7 @@ button {
     cursor: pointer;
 }
 
+
 button .nav-link {
     margin: 0;
 }
@@ -68,20 +97,33 @@ button .nav-link {
     display: none;
     position: absolute;
     right: 0;
-    background-color: #333378;
+    background-color: #A9BCD0;
     z-index: 1;
     min-width: 160px;
     border-radius: 9px;
     padding: 0.5rem;
 }
 
+.indicator{
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 10px;
+    right: 20px;
+    top: -5px;
+    transform: rotate(45deg);
+    background-color: #A9BCD0;
+
+}
+
 .dropdown-content a {
-    color: black;
+    color: #24273F;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     display: flex;
     align-items: center;
+    transition: 0.2s;
 }
 
 .dropdown-content svg{
@@ -92,30 +134,48 @@ button .nav-link {
 }
 
 .dropdown-content a:hover {
-    background-color: #a9bcd0;
+    background-color: #D8DBE2;
     border-radius: 9px;
+    transition: 0.2s;
 }
 
+@media screen and (max-width: 450px) {
+    header{
+        justify-content: center;
+    }
+    #logo{
+        margin: 1rem;
+    }
+    ul{
+        padding: 0;
+    }
+}
 
-
-/* Empieza el main */
+/* Termina la edicion del header, empieza la de main */
 
 main{
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: #a9bcd0;
+    justify-content: center;
 }
 
-/* Footer */
-
-footer{
-    position: fixed;
-    width: 100vw;
-    bottom: 0;
+main a{
+    background: rgba(76, 76, 128, 0.25);
+    text-decoration: none;
+    color: #D8DBE2;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 9px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    color: rgba(129, 129, 167, 0.25);
+    transition: 0.5s;
+}
+
+main a:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }

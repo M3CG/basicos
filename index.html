@@ -2,290 +2,163 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi pagina</title>
-  <link rel="stylesheet" href="normalize.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="fotos/favicon_io/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="fotos/favicon_io/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="fotos/favicon_io/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina</title>
+    <link rel="stylesheet" href="nueva.css">
 </head>
 
 <body>
-  <header id="header-principal">
-    <img id="logo" src="fotos/liz2.png" alt="flor liz" />
-    <nav>
-      <a href="https://quickref.me/python" target="_blank">
-        <img class="pagina" src="//external-content.duckduckgo.com/ip3/quickref.me.ico" alt="QuickRef.me" />
-      </a>
-      <a href="https://www.onlinegdb.com/online_python_interpreter" target="_blank">
-        <img class="pagina" src="//external-content.duckduckgo.com/ip3/www.onlinegdb.com.ico" alt="onlinegdb.com" />
-      </a>
-      <a href="https://www.youtube.com/watch?v=G2FCfQj-9ig&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS" target="_blank">
-        <svg class="pagina" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-play-fill" viewBox="0 0 16 16">
-          <path
-            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+
+    <!-- Inicio header -->
+
+    <header class="topbar">
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38"
+            height="38" viewBox="0, 0, 400,400">
+            <g id="svgg">
+                <path id="path0"
+                    d="M191.093 11.469 C 139.499 76.828,134.050 100.198,157.438 155.801 C 168.235 181.470,178.333 209.512,182.057 224.162 C 183.578 230.147,185.575 237.927,186.494 241.453 L 188.166 247.863 202.597 247.863 C 216.941 247.863,217.035 247.835,218.102 243.162 C 225.408 211.151,232.373 189.357,247.464 151.282 C 266.935 102.159,259.764 75.158,210.781 13.178 L 200.256 -0.139 191.093 11.469 M75.020 135.704 C 13.386 153.558,17.596 247.863,80.027 247.863 C 94.301 247.863,93.959 248.347,86.544 238.633 C 75.862 224.639,77.538 210.184,90.658 203.148 C 109.204 193.202,141.523 214.267,152.049 243.162 C 153.695 247.682,154.225 247.863,165.770 247.863 C 179.281 247.863,178.883 248.470,175.132 233.580 C 156.341 158.973,119.393 122.850,75.020 135.704 M295.606 135.569 C 265.231 144.156,242.459 177.309,228.286 233.580 C 224.536 248.470,224.138 247.863,237.649 247.863 C 249.194 247.863,249.723 247.682,251.370 243.162 C 264.823 206.230,308.603 186.946,321.519 212.262 C 325.916 220.881,324.563 228.561,316.874 238.633 C 309.459 248.347,309.117 247.863,323.392 247.863 C 381.785 247.863,390.726 156.515,334.188 137.565 C 322.811 133.752,305.247 132.843,295.606 135.569 M145.299 264.957 L 145.299 275.214 200.855 275.214 L 256.410 275.214 256.410 264.957 L 256.410 254.701 200.855 254.701 L 145.299 254.701 145.299 264.957 M156.357 282.906 C 153.636 291.616,154.023 291.360,149.696 287.295 C 132.412 271.058,101.600 296.976,115.714 315.880 C 135.247 342.043,170.622 325.184,178.627 285.897 L 179.759 280.342 168.458 280.342 C 159.909 280.342,156.963 280.966,156.357 282.906 M183.075 296.865 C 175.491 320.295,161.200 339.714,148.402 343.980 C 140.139 346.734,155.301 365.547,168.644 369.096 C 174.265 370.591,176.131 372.080,177.574 376.219 C 180.016 383.223,187.061 391.470,194.529 396.067 L 200.637 399.827 207.545 394.747 C 214.623 389.542,223.932 377.347,223.932 373.280 C 223.932 372.029,226.047 370.550,228.632 369.994 C 253.368 364.673,263.347 348.580,247.656 339.316 C 233.610 331.023,224.742 317.523,217.901 294.017 L 214.170 281.197 201.319 280.701 L 188.468 280.206 183.075 296.865 M222.241 280.769 C 222.522 287.255,232.259 308.784,238.793 317.367 C 250.300 332.482,276.189 331.862,286.538 316.224 C 299.653 296.406,274.103 272.689,254.193 286.200 L 248.080 290.348 246.981 285.345 C 245.895 280.402,245.741 280.342,234.052 280.342 C 227.546 280.342,222.231 280.534,222.241 280.769 "
+                    stroke="none" fill-rule="evenodd" fill="currentColor" />
+            </g>
         </svg>
-      </a>
-      <a href="https://www.w3schools.com/python/python_reference.asp" target="_blank" rel="noopener noreferrer">
-        <img class="pagina" src="//external-content.duckduckgo.com/ip3/www.w3schools.com.ico" alt="w3schools.com"
-          style="height: 1.7rem; padding: 0.15rem;">
-      </a>
-      <a href="https://meet.google.com/gjv-fqkx-aoq" target="_blank" rel="noopener noreferrer">
-        <img class="pagina" src="//external-content.duckduckgo.com/ip3/meet.google.com.ico"
-          title="Search domain meet.google.com" loading="lazy">
-      </a>
-    </nav>
-  </header>
-  <aside>
-    <ul>
-      <li><a class="nav-link" href="#1">Hola Elnestito!</a></li>
-      <li>
-        <a class="nav-link" href="#2">Suma de 3 numeros</a>
-      </li>
-      <li>
-        <a class="nav-link" href="#3">Saber el mayor</a>
-      </li>
-      <li><a class="nav-link" href="#4">Cuestion de precios</a></li>
-      <li><a class="nav-link" href="#5">Mayor de 3</a></li>
-      <li>
-        <a class="nav-link" href="#6">Crema cookie</a>
-      </li>
-      <li><a class="nav-link" href="#7">Son iguales?</a></li>
-      <li>
-        <a class="nav-link" href="#8">Promedio</a>
-      </li>
-      <li><a class="nav-link" href="#9">Paridad</a></li>
-      <li><a class="nav-link" href="#10">Temperatura</a></li>
-      <li>
-        <a class="nav-link" href="#11">Puedo volaaar!!!</a>
-      </li>
-      <li><a class="nav-link" href="#12">Indice de masa corporal</a></li>
-      <li>
-        <a class="nav-link" href="#13">Dificil sin energia</a>
-      </li>
-      <li><a class="nav-link" href="#14">Recordatorio</a></li>
-    </ul>
-  </aside>
-  <main>
-    <span class="anchor" id="1"></span>
-    <section class="main-section" id="Introduction">
-      <header>Hola Elnestito!</header>
-      <article>
-        <p>
-          Hacer un programa que guarde la cadena "Hola Elnestito!" en una variable y luego muestre
-          el contenido de esa variable por pantalla.
-        </p>
+        <nav>
+            <ul>
+                <li><a href="https://quickref.me/python" target="_blank">
+                        <svg class="nav-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm6.43-5.228a7.025 7.025 0 0 1-3.658 3.658l-1.115-2.788a4.015 4.015 0 0 0 1.985-1.985l2.788 1.115zM5.228 14.43a7.025 7.025 0 0 1-3.658-3.658l2.788-1.115a4.015 4.015 0 0 0 1.985 1.985L5.228 14.43zm9.202-9.202-2.788 1.115a4.015 4.015 0 0 0-1.985-1.985l1.115-2.788a7.025 7.025 0 0 1 3.658 3.658zm-8.087-.87a4.015 4.015 0 0 0-1.985 1.985L1.57 5.228A7.025 7.025 0 0 1 5.228 1.57l1.115 2.788zM8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="https://www.onlinegdb.com/online_python_interpreter" target="_blank">
+                        <svg class="nav-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                            <path
+                                d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="https://www.w3schools.com/python/python_reference.asp" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg class="nav-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z" />
+                            <path
+                                d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="https://meet.google.com/gjv-fqkx-aoq" target="_blank" rel="noopener noreferrer">
+                        <svg class="nav-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <button>
+                        <svg class="nav-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="indicator"></div>
+                        <a href="https://gnula.nu/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-film" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z" />
+                            </svg>
+                            Peliculas
+                        </a>
+                        <a href="https://www.1001juegos.com/e/escapar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-controller" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z" />
+                                <path
+                                    d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z" />
+                            </svg>
+                            Juegos
+                        </a>
+                        <a href="https://z-lib.org/" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-book" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                            </svg>
+                            Libros
+                        </a>
+                        <a href="https://websudoku.com/" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-grid-3x3" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z" />
+                            </svg>
+                            Sudokus
+                        </a>
+                        <a href="https://agilefingers.com/es" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-keyboard" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12zM2 4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2z" />
+                                <path
+                                    d="M13 10.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm0-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5 0A.25.25 0 0 1 8.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 8 8.75v-.5zm2 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25v-.5zm1 2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5-2A.25.25 0 0 1 6.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 6 8.75v-.5zm-2 0A.25.25 0 0 1 4.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 4 8.75v-.5zm-2 0A.25.25 0 0 1 2.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 8.75v-.5zm11-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0A.25.25 0 0 1 9.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 9 6.75v-.5zm-2 0A.25.25 0 0 1 7.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 7 6.75v-.5zm-2 0A.25.25 0 0 1 5.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 5 6.75v-.5zm-3 0A.25.25 0 0 1 2.25 6h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5A.25.25 0 0 1 2 6.75v-.5zm0 4a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm2 0a.25.25 0 0 1 .25-.25h5.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-5.5a.25.25 0 0 1-.25-.25v-.5z" />
+                            </svg>
+                            Mecanografia
+                        </a>
+                        <a href="https://www.deepl.com/translator" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-translate" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z" />
+                                <path
+                                    d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z" />
+                            </svg>
+                            Traductor
+                        </a>
+                        <a href="https://www3.animeflv.net/anime/tate-no-yuusha-no-nariagari" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-shield" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z" />
+                            </svg>
+                            Shield hero
+                        </a>
+                        <a href="https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/06/01/Recortada/img_djuarez_20160617-135010_imagenes_lv_getty_gettyimages-152251799-kkd-U443985061577M3F-992x558@LaVanguardia-Web.jpg"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-archive" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                            Tu miedo
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <p>
-          El segundo nivel de este programa esta en crear un programa que salude a quien lo use, para eso primero hay
-          que preguntar por el nombre de quien lo usa. Cuando sabemos quien es, se le envia un mensaje que diga "Muy
-          buen dia *nombre_de_persona!!!", como en el ejemplo:
-        </p>
-        <ul>
-          <li>
-            Escriba su nombre: Nahi
-          </li>
-          <li>
-            Muy buen dia Nahi!!!
-          </li>
-        </ul>
-      </article>
-    </section>
-    <span class="anchor" id="2"></span>
-    <section class="main-section" id="What_you_should_already_know">
-      <header>Suma de 3 numeros</header>
-      <article>
-        <p>Escribir un programa que tenga 3 variables numericas y muestre en pantalla la suma de ellas. </p>
-        <p> Al saber más, más se puede: Al avanzar en los estudios vas a poder armar un programa que le pida a la
-          persona que ingrese 3 numeros y devuelva el resultado de la suma, y se vea como en el ejemplo:</p>
-        <ul>
-          <li>
-            Programa para sumar 3 numeros
-          </li>
-          <li>Ingrese el primer numero: *lo_ingresa</li>
-          <li>
-            Ingrese el segundo numero: *lo_ingresa
-          </li>
-          <li>Ingrese el tercer numero: *lo_ingresa</li>
-          <li>La suma de esos numeros es: *la_suma</li>
-        </ul>
-      </article>
-    </section>
-    <span class="anchor" id="3"></span>
-    <section class="main-section" id="JavaScript_and_Java">
-      <header>Saber el mayor</header>
-      <article>
-        <p>
-          De 2 numeros, saber cual es el mayor.
-        </p>
+    <!-- Fin header -->
 
-        <p>
-          La primera vez que escribisté este programa, los numeros empezaban ya guardados en variables. Seria un avance
-          que puedan elegirse esos numeros cada vez que ejecutamos el codigo. <br> Incluso, habria que probar el
-          comparar más de 2
-        </p>
-        <p>Pista para mas comparaciónes: if</p>
-        <p>Pista para superar los niveles anteriores: for/while</p>
-      </article>
-    </section>
-    <span class="anchor" id="4"></span>
-    <section class="main-section" id="Hello_world">
-      <header>Cuestion de precios</header>
-      <article>
-        El ejercicio original dice:
-        <code>al cargar el precio de un producto, devuelva el precio final del mismo (producto + iva).
-          </code>
-        Sin embargo podemos mejorarlo, podemos hacerlo util para vos.
-        Vos tenes un negocio de budines. Los precios de los materiales que usas se actualizan, ademas que podes cambiar
-        cosas, como el azucar impalpable del glaseado.
-        <code>Escribí un programa que pregunte cuanto cuesta hacer algo, que pregunte a cuanto lo vendes y te diga que porcentaje de ganancia le sacas. 
-          </code>
-
-        Esto va a ser util cada vez que cambie cualquier precio y no solo para la venta de budines, sino para todo lo
-        que quieras vender.
-      </article>
-    </section>
-    <span class="anchor" id="5"></span>
-    <section class="main-section" id="Variables">
-      <header>Mayor de 3</header>
-      <p>
-        Muy parecido a "Saber el mayor", si todavia no tenes un programa que compare el mayor de 3 numeros, entonces
-        este es el momento de intentarlo. Al seguir estudiando vas a poder comparar infinitos numeros con la pista del
-        ejercicio referido.
-      </p>
-      <p>El programa original dice:</p>
-      <code>De 3 numeros, saber cual es el mayor.</code>
-    </section>
-    <span class="anchor" id="6"></span>
-    <section class="main-section" id="Declaring_variables">
-      <header>Crema cookie</header>
-      <article>
-        <p>
-          El ejercicio original es:
-        </p>
-        <code>Se cargué el nombre de un gusto de helado en una variable y muestre por pantalla un mensaje que aclare lo rico que es el helado de ese gusto. </code>
-        <p>
-          No lo cambio a este ejercicio, pero acordate, tanto para este como para todos los otros, hay que hacer que
-          quien usa el programa no necesite ver el codigo. Intenta hacer todo asi desde este punto.
-        </p>
-      </article>
-    </section>
-    <span class="anchor" id="7"></span>
-    <section class="main-section" id="Variable_scope">
-      <header>Son iguales?</header>
-      <article>
-        <p>
-          Original:
-        </p>
-        <code>Diga si 2 numeros cargados en variables son iguales o diferentes.</code>
-        <p>Y con mas números? son tooooooodos iguales?</p>
-      </article>
-    </section>
-    <span class="anchor" id="8"></span>
-    <section class="main-section" id="Global_variables">
-      <header>Promedio</header>
-      <article>
-        <p>
-          Original:
-        </p>
-        <code>Muestre el promedio de 3 numeros.</code>
-        <p>Etselente, que util sería para alguien en la secundaria, que ve su libreta y quiere saber su promedio en la
-          materia, ya que son 3 trimestres. <br>
-          Si quiere saber su promedio general como podriamos resolverle la duda? Para eso hay que promediar todas las
-          materias y son mas de 3, ademas, no todos los colegios tienen la misma cantidad de materias, como podemos
-          hacer entonces? Hay que profundizar en la programación para averigüar.</p>
-      </article>
-    </section>
-    <span class="anchor" id="9"></span>
-    <section class="main-section" id="Constants">
-      <header>Paridad</header>
-      <article>
-        <p>
-          Original:
-        </p>
-
-        <code>Diga si un numero guardado en una variable es par o impar.</code>
-        <p>
-          Que mareo este programa, no lo compliquemos mas, podes resolverlo solo con la ayuda de internet?
-        </p>
-
-      </article>
-    </section>
-    <span class="anchor" id="10"></span>
-    <section class="main-section" id="Data_types">
-      <header>Temperatura</header>
-      <article>
-        <p>Original:</p>
-        <code>Tenga en una variable una temperatura en escala Fahrenheit (debe permitir decimales) y le muestre el equivalente en grados Celsius. La fórmula de conversión que se usa para este cálculo es: celsius = (5/9) * (fahrenheit-32)</code>
-        <p>Y este programa? da gusto resolverlo no? Entonces nos quedemos con el original.</p>
-      </article>
-    </section>
-    <span class="anchor" id="11"></span>
-    <section class="main-section" id="if...else_statement">
-      <header>Puedo volaaar!!!</header>
-      <article>
-        <p>Incluso hay que saber equivocarse, sabrias imitar una equivocación?</p>
-        <img class="meme"
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F00%2Fe6%2F90%2F00e690da9ce8db3e69470623e3f0ab3d.jpg&amp;f=1&amp;nofb=1"
-          alt="F, no se carga el meme, pero aqui deberia ir">
-        <p>Pista: str(...codigo...codigo...codigo)</p>
-      </article>
-    </section>
-    <span class="anchor" id="12"></span>
-    <section class="main-section" id="while_statement">
-      <header>Indice de masa corporal</header>
-      <article>
-        <p>Tenes muchisima perseverancia, es para admirar.
-          <br> Que genialidad el poder mezclar las cosas que nos gusta hacer, programación y medicina? como????
-        </p>
-        <img class="meme" src="fotos/medica.jpg"
-          alt="Aqui deberia haber foto de una perfecta estudiante, aplicada, persistente e inteligente.">
-        <code>Calculo del indice de masa corporal:
-            Crear un programa medico para calcular el IMC de una persona.
-            Como se calcula? se divide el peso(kg), en la (altura(m) al cuadrado).
-            Cual es el IMC ideal? 18.5 – 24.9</code>
-      </article>
-    </section>
-    <span class="anchor" id="13"></span>
-    <section class="main-section" id="Function_declarations">
-      <header>Dificil sin energia</header>
-      <article>
-        <p>Este ejercicio nos puede dejar trabado si lo vemos cuando ya estamos cansados.
-          <br> Como funcionan las variables booleanas? <br>
-          Imaginemos la bateria de un celular, puede estar completamente cargada, sin embargo, el que no este
-          completamente cargada, no significa que esta descargada, es decir 0%, sino que tiene muchos otros niveles de
-          carga [1%-99%].
-          <code>Quiero un programa al que yo le diga cuanta carga tiene mi bateria y si tiene 100, entonces que responda que la bateria esta completamente cargada.</code>
-        <p>Como resolvimos este ejercicio? usamos una variable que guarda un tipo de dato especial, un tipo de dato
-          booleano, es decir, que solo puede valer "verdadero" o "falso"</p>
-        </p>
-      </article>
-    </section>
-    <span class="anchor" id="14"></span>
-    <section class="main-section" id="Reference">
-      <header>Recordatorio</header>
-      <article>
-        <p>
-          Si un desafio tiene solución entonces no hace falta preocuparse <br>
-          y si no tiene solucion, preocuparse no va a cambiar las cosas.
-        </p>
-      </article>
-    </section>
-  </main>
-  <footer>
-    <a href="nueva.html">
-      <svg class="nav-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-        viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-          d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
-      </svg>
-    </a>
-  </footer>
+    <main>
+        <a href="./vieja.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
+                <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              Pagina vieja
+        </a>
+    </main>
 </body>
 
 </html>
